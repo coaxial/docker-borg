@@ -1,5 +1,5 @@
 # docker-borg
-[![Build Status](https://travis-ci.org/coaxial/docker-borg.svg?branch=master)](https://travis-ci.org/coaxial/docker-borg)
+[![Build Status](https://travis-ci.org/coaxial/docker-borg.svg?branch=master)](https://travis-ci.org/coaxial/docker-borg) [![](https://images.microbadger.com/badges/image/coaxial/borg.svg)](https://microbadger.com/images/coaxial/borg "Get your own image badge on microbadger.com")
 
 [Borg](https://borgbackup.readthedocs.io/) in an Alpine container for your backup needs. Updated whenever `alpine:latest`  is.
 
