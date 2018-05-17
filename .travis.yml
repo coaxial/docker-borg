@@ -5,6 +5,6 @@ jobs:
       services:
         - docker
       install:
-        - docker image pull coaxial/borg
+        - docker build -t borg .
       script:
-        - docker run --rm coaxial/borg borg --version | grep 'borg [0-9\.]\{1,\}'
+        - docker run --rm borg borg --version | grep 'borg [0-9\.]\{1,\}'
