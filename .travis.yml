@@ -8,3 +8,6 @@ jobs:
         - docker build -t borg .
       script:
         - docker run --rm borg borg --version | grep 'borg [0-9\.]\{1,\}'
+
+notifications:
+  webhooks: https://hooks.microbadger.com/images/coaxial/borg/RMbY99EsR_5_OP57rq-CMATAE50=
