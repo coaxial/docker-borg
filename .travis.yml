@@ -1,0 +1,10 @@
+---
+jobs:
+  include:
+    - stage: test
+      services:
+        - docker
+      install:
+        - docker image pull coaxial/borg
+      script:
+        - docker run --rm coaxial/borg borg --version | grep 'borg [0-9\.]\{1,\}'
