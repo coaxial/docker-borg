@@ -16,7 +16,7 @@ VOLUME /root/.ssh
 CMD ["borg", <borg parameters, cf. its docs>]
 ```
 
-You would then run it with `docker run --rm -v data_volume:/backup:ro ssh_volume:/root/.ssh:ro myimage 'borg list /path/to/repo'`.
+You would then run it with `docker run --rm -v data_volume:/backup:ro -v ssh_volume:/root/.ssh:ro myimage`.
 
 The ssh_volume should contain the ssh keys to connect to the remote borg repo, and a known_hosts file to avoid the interactive message whether to accept the new ssh key on connecting to a remote host.
 
