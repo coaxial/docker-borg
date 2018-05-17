@@ -1,0 +1,10 @@
+---
+jobs:
+  include:
+    - stage: test
+      services:
+        - docker
+      install:
+        - docker build -t borg .
+      script:
+        - docker run --rm borg borg --version | grep 'borg [0-9\.]\{1,\}'
